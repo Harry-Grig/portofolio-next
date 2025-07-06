@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Twitter, Send } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimations";
 
 const Contact = () => {
@@ -50,6 +50,7 @@ const Contact = () => {
             <a
               href="#"
               className="p-6 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:scale-125 hover:glow-cyan group relative overflow-hidden"
+              aria-label="Github"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
               <Github className="w-8 h-8 group-hover:text-primary transition-colors duration-500 relative z-10" />
@@ -57,9 +58,26 @@ const Contact = () => {
             <a
               href="#"
               className="p-6 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:scale-125 hover:glow-cyan group relative overflow-hidden"
+              aria-label="Linkedin"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
               <Linkedin className="w-8 h-8 group-hover:text-primary transition-colors duration-500 relative z-10" />
+            </a>
+            <a
+              href="#"
+              className="p-6 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:scale-125 hover:glow-cyan group relative overflow-hidden"
+              aria-label="Telegram"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
+              <Send className="w-8 h-8 group-hover:text-primary transition-colors duration-500 relative z-10" />
+            </a>
+            <a
+              href="#"
+              className="p-6 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:scale-125 hover:glow-cyan group relative overflow-hidden"
+              aria-label="X"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
+              <Twitter className="w-8 h-8 group-hover:text-primary transition-colors duration-500 relative z-10" />
             </a>
           </div>
         </div>
@@ -69,3 +87,4 @@ const Contact = () => {
 };
 
 export default Contact;
+en;

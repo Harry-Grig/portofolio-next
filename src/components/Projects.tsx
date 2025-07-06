@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimations";
+import Image from "next/image";
 
 const Projects = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -66,7 +67,13 @@ const Projects = () => {
               <div
                 className={`h-56 rounded-xl bg-gradient-to-br ${project.gradient} mb-8 opacity-80 group-hover:opacity-100 transition-all duration-500 relative overflow-hidden`}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse"></div>
+                <Image
+                  src="/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202025-07-02%20143545.png"
+                  alt="Project Image"
+                  width={400}
+                  height={300}
+                  className="absolute inset-0 animate-pulse"
+                />
               </div>
 
               <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors duration-500 font-poppins relative z-10">

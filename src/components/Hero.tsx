@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimations";
 
@@ -26,13 +27,12 @@ const Hero = () => {
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
-
       <div
         ref={ref}
         className="container mx-auto text-center relative z-10 max-w-5xl"
       >
         <div
-          className={`pointer-events-none transition-all duration-1200 ${
+          className={`transition-all duration-1200 ${
             isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
           }`}
         >
@@ -42,18 +42,16 @@ const Hero = () => {
             Experiences
           </h1>
         </div>
-
         <div
           className={`transition-all duration-1200 ${
             isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
           }`}
           style={{ animationDelay: "0.3s" }}
         >
-          <p className="pointer-events-none text-xl md:text-3xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light font-poppins leading-relaxed">
+          <p className="text-xl md:text-3xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light font-poppins leading-relaxed">
             Freelance Full-Stack & Frontend Developer | Next.js, React & AI
           </p>
         </div>
-
         <div
           className={`transition-all duration-1200 ${
             isVisible ? "animate-scale-in" : "opacity-0 scale-75"
@@ -72,6 +70,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/* Diagonal transition element for seamless connection to the next section */}
+      {/* This div creates a skewed gradient that visually flows from the Hero to the About section. */}
+      {/* It uses a 'skew-y' transform and 'origin-bottom-left' to create a diagonal line. */}
+      {/* The gradient goes from 'primary' color to the 'background' color, blending smoothly. */}
+      <div className=" absolute bottom-0 left-0 w-full h-64 transform skew-y-[-3deg] origin-bottom-left bg-gradient-to-tr from-gray-800 to-[(var(--background))] z-0"></div>
     </section>
   );
 };
