@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimations";
 
@@ -31,7 +32,7 @@ const Hero = () => {
         className="container mx-auto text-center relative z-10 max-w-5xl"
       >
         <div
-          className={`transition-all duration-1200 ${
+          className={`pointer-events-none transition-all duration-1200 ${
             isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
           }`}
         >
@@ -48,7 +49,7 @@ const Hero = () => {
           }`}
           style={{ animationDelay: "0.3s" }}
         >
-          <p className="text-xl md:text-3xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light font-poppins leading-relaxed">
+          <p className="pointer-events-none text-xl md:text-3xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light font-poppins leading-relaxed">
             Freelance Full-Stack & Frontend Developer | Next.js, React & AI
           </p>
         </div>

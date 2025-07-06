@@ -33,8 +33,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="dark">
+      <body
+        className={`${poppins.variable} ${spaceGrotesk.variable} bg-background text-foreground antialiased`}
+      >
         <Providers>{children}</Providers>
       </body>
     </html>

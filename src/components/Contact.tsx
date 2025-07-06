@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimations";

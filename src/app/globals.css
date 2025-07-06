@@ -121,6 +121,10 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: "Poppins", sans-serif;
+    /* Remove conflicting styles */
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Changed from center to left */
   }
   html {
     scroll-behavior: smooth;
@@ -274,14 +278,7 @@
   }
 }
 
-/* Your existing custom styles */
-body {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
+/* Removed conflicting body styles that were overriding Tailwind */
 .logo {
   height: 6em;
   padding: 1.5em;

@@ -24,25 +24,29 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-in-out ${
+      className={`fixed top-0 rounded-full z-50 transition-all duration-700 ease-in-out ${
         isScrolled
-          ? "bg-black/90 backdrop-blur-lg py-3 px-6 mx-4 mt-4 rounded-2xl border border-white/10"
-          : "bg-black/80 backdrop-blur-md py-6 px-8 w-full"
+          ? "bg-black/70 backdrop-blur-lg py-2 px-4 mx-2 mt-3 rounded-2xl border border-white/10"
+          : "bg-black/60 backdrop-blur-md py-4 px-6 w-full"
       }`}
       style={{
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
+        maxWidth: isScrolled ? "520px" : "900px", // limit navbar width
+        left: "50%",
+        transform: "translateX(-50%)",
+        right: "auto",
       }}
     >
       <div
-        className={`container mx-auto flex items-center justify-between transition-all duration-700 ${
-          isScrolled ? "max-w-4xl" : "max-w-7xl"
+        className={`container mx-auto flex items-center justify-between gap-7 transition-all duration-700 ${
+          isScrolled ? "max-w-3xl" : "max-w-5xl"
         }`}
       >
         {/* Logo/Name */}
         <div className="animate-slide-in-left">
           <h1
-            className={`gradient-text font-bold transition-all duration-700 font-poppins ${
+            className={`gradient-text font-bold transition-all duration-700 font-poppins pointer-events-none ${
               isScrolled ? "text-2xl" : "text-3xl"
             }`}
           >
@@ -59,7 +63,7 @@ const Navbar = () => {
             <button
               key={section}
               onClick={() => scrollToSection(section)}
-              className={`text-foreground hover:text-primary transition-all duration-500 capitalize font-medium hover:scale-110 transform relative group font-poppins ${
+              className={`cursor-pointer text-foreground hover:text-primary transition-all duration-500 capitalize font-medium hover:scale-110 transform relative group font-poppins ${
                 isScrolled ? "text-sm font-medium" : "text-base font-semibold"
               }`}
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
@@ -77,7 +81,7 @@ const Navbar = () => {
         >
           <Button
             onClick={() => scrollToSection("contact")}
-            className={`bg-gradient-to-r from-primary via-secondary to-accent text-black font-bold hover:scale-110 transform transition-all duration-500 hover:shadow-2xl hover:shadow-primary/30 relative overflow-hidden group font-poppins ${
+            className={`cursor-pointer bg-gradient-to-r from-primary via-secondary to-accent text-black font-bold hover:scale-110 transform transition-all duration-500 hover:shadow-2xl hover:shadow-primary/30 relative overflow-hidden group font-poppins ${
               isScrolled ? "px-5 py-2.5 text-sm" : "px-8 py-3 text-base"
             }`}
           >

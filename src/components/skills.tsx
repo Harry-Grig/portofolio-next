@@ -1,3 +1,4 @@
+"use client";
 import { useScrollAnimation } from "@/hooks/useScrollAnimations";
 
 const Skills = () => {
