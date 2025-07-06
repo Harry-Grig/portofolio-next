@@ -1,4 +1,4 @@
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useScrollAnimation } from "../hooks/useScrollAnimations";
 
 const About = () => {
   const { ref, isVisible } = useScrollAnimation();
