@@ -14,14 +14,17 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 pt-20">
-      {/* Enhanced Animated Background Elements */}
+    <section
+      className="min-h-screen flex items-center justify-center relative px-4 pt-20 bg-background"
+      style={{
+        backgroundImage: `linear-gradient(to bottom, #1A1A2E, #0A0A0A)`,
+      }}
+    >
+      {/* Animated Background Elements - now contained within a standard inset-0 div with overflow-hidden */}
+      {/* These elements are now purely decorative within the Hero section, not for transition. */}
       <div className="absolute inset-0 overflow-hidden">
+        {/* Top-right element - size and position are contained */}
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-gradient-to-r from-primary/30 to-accent/30 blur-3xl animate-pulse animate-float"></div>
-        <div
-          className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-gradient-to-r from-secondary/30 to-primary/30 blur-3xl animate-pulse animate-float"
-          style={{ animationDelay: "1s" }}
-        ></div>
         <div
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-gradient-to-r from-accent/20 to-secondary/20 blur-3xl animate-pulse animate-float"
           style={{ animationDelay: "2s" }}
@@ -72,11 +75,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* Diagonal transition element for seamless connection to the next section */}
-      {/* This div creates a skewed gradient that visually flows from the Hero to the About section. */}
-      {/* It uses a 'skew-y' transform and 'origin-bottom-left' to create a diagonal line. */}
-      {/* The gradient goes from 'primary' color to the 'background' color, blending smoothly. */}
-      <div className=" absolute bottom-0 left-0 w-full h-64 transform skew-y-[-3deg] origin-bottom-left bg-gradient-to-tr from-gray-800 to-[(var(--background))] z-0"></div>
     </section>
   );
 };

@@ -6,10 +6,13 @@ const About = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-24 px-4 mt-[-64px]" id="about">
-      {" "}
-      {/* Added negative margin-top for seamless overlap */}
-      <div ref={ref} className="container mx-auto max-w-6xl">
+    // Removed negative margin-top (mt-[-48px]) to allow clean stacking.
+    // Explicitly set bg-background to ensure consistent base color.
+    <section
+      className="py-24 px-4 relative bg-background overflow-hidden" // Removed mt-[-48px], added bg-background
+      id="about"
+    >
+      <div ref={ref} className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-16">
           <h2
             className={`cursor-events-none text-5xl md:text-7xl font-black mb-8 font-poppins transition-all duration-1200 ${
@@ -43,15 +46,42 @@ const About = () => {
             }`}
             style={{ animationDelay: "0.4s" }}
           >
-            <p className=" text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8 font-light font-poppins">
-              I'm a passionate full-stack developer specializing in modern web
-              apps, pixel-perfect UIs, and AI-powered experiences. Focused on
-              turning complex ideas into elegant solutions.
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8 font-light font-poppins">
+              I'm a results-driven full-stack developer crafting{" "}
+              <span className="font-semibold text-primary">
+                modern web apps
+              </span>
+              ,
+              <span className="font-semibold text-primary">
+                {" "}
+                seamless user experiences
+              </span>
+              , and
+              <span className="font-semibold text-primary">
+                {" "}
+                AI-powered solutions
+              </span>
+              . I thrive on transforming complex concepts into{" "}
+              <span className="font-semibold text-primary">
+                clean, high-performance digital products
+              </span>
+              .
             </p>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-light font-poppins">
-              With expertise in cutting-edge technologies and a keen eye for
-              design, I help businesses and individuals bring their digital
-              visions to life.
+              Blending{" "}
+              <span className="font-semibold text-primary">
+                advanced technology
+              </span>{" "}
+              with{" "}
+              <span className="font-semibold text-primary">
+                thoughtful design
+              </span>
+              , I help businesses and founders turn{" "}
+              <span className="font-semibold text-primary">
+                bold ideas into reality
+              </span>{" "}
+              — delivering products that don't just work, but{" "}
+              <span className="font-semibold text-primary">delight</span>.
             </p>
           </div>
         </div>
