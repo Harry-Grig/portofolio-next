@@ -8,25 +8,40 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "AI-Powered E-Commerce Platform",
-      description:
-        "Next.js app with intelligent product recommendations and real-time analytics",
-      tech: ["Next.js", "AI/ML", "Stripe"],
-      gradient: "from-primary to-secondary",
-    },
-    {
       title: "Modern SaaS Dashboard",
       description:
-        "React dashboard with advanced data visualization and user management",
-      tech: ["React", "D3.js", "Node.js"],
-      gradient: "from-secondary to-accent",
+        "Next.js dashboard with advanced data visualization, user, tasks & client management",
+      tech: [
+        "Next.js",
+        "Tailwind css",
+        "API end points",
+        "shadcn ui",
+        "zod",
+        "prisma",
+      ],
+      href: "/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202025-07-02%20143545.png",
     },
     {
       title: "Creative Portfolio Website",
       description:
         "Stunning portfolio with smooth animations and interactive elements",
       tech: ["Next.js", "Framer Motion", "Tailwind"],
-      gradient: "from-accent to-primary",
+      href: "/Screenshot%202025-07-07%20143857.png",
+    },
+    {
+      title: "Full Stack productivity task manager",
+      description:
+        "An MVP productivity task manager for small agency or saas team",
+      tech: [
+        "Next.js",
+        "Framer Motion",
+        "Tailwind",
+        "zod",
+        "prisma",
+        "shadcn ui",
+        "server actions",
+      ],
+      href: "/Screenshot%202025-07-07%20134336.png",
     },
   ];
 
@@ -65,10 +80,10 @@ const Projects = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div
-                className={`h-56 rounded-xl bg-gradient-to-br ${project.gradient} mb-8 opacity-80 group-hover:opacity-100 transition-all duration-500 relative overflow-hidden`}
+                className={`h-56 rounded-xl  mb-8 opacity-80 group-hover:opacity-100 transition-all duration-500 relative overflow-hidden`}
               >
                 <Image
-                  src="/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202025-07-02%20143545.png"
+                  src={`${project.href}`}
                   alt="Project Image"
                   width={400}
                   height={300}
