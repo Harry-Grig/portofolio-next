@@ -11,7 +11,7 @@ const Contact = () => {
     <section className="py-24 px-4" id="contact">
       <div ref={ref} className="container mx-auto max-w-5xl text-center">
         <div
-          className={`transition-all duration-1200 ${
+          className={`pointer-events-none transition-all duration-1200 ${
             isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
           }`}
         >
@@ -32,7 +32,7 @@ const Contact = () => {
           <div className="gradient-border inline-block rounded-xl mb-12">
             <Button
               size="lg"
-              className="bg-background text-foreground hover:bg-muted text-2xl px-12 py-8 font-bold transition-all duration-500 hover:glow-cyan hover:scale-110 transform font-poppins relative overflow-hidden group"
+              className="cursor-pointer bg-background text-foreground hover:bg-muted text-2xl px-12 py-8 font-bold transition-all duration-500 hover:glow-cyan hover:scale-110 transform font-poppins relative overflow-hidden group"
             >
               <span className="relative z-10">Get in Touch</span>
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

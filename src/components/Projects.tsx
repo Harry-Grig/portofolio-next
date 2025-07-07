@@ -50,14 +50,14 @@ const Projects = () => {
       <div ref={ref} className="container mx-auto max-w-7xl">
         <div className="text-center mb-20">
           <h2
-            className={`text-5xl md:text-7xl font-black mb-8 font-poppins transition-all duration-1200 ${
+            className={`pointer-events-none text-5xl md:text-7xl font-black mb-8 font-poppins transition-all duration-1200 ${
               isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
             }`}
           >
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p
-            className={`text-2xl text-muted-foreground font-light transition-all duration-1200 font-poppins ${
+            className={`pointer-events-none text-2xl text-muted-foreground font-light transition-all duration-1200 font-poppins ${
               isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
             }`}
             style={{ animationDelay: "0.2s" }}
@@ -91,11 +91,11 @@ const Projects = () => {
                 />
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors duration-500 font-poppins relative z-10">
+              <h3 className="pointer-events-none text-2xl font-bold mb-4 group-hover:text-primary transition-colors duration-500 font-poppins relative z-10">
                 {project.title}
               </h3>
 
-              <p className="text-muted-foreground mb-6 leading-relaxed font-light font-poppins text-lg relative z-10">
+              <p className="pointer-events-none text-muted-foreground mb-6 leading-relaxed font-light font-poppins text-lg relative z-10">
                 {project.description}
               </p>
 
@@ -103,7 +103,7 @@ const Projects = () => {
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="px-4 py-2 bg-muted rounded-full text-sm text-primary font-medium font-poppins hover:scale-110 transition-transform duration-300"
+                    className="cursor-default px-4 py-2 bg-muted rounded-full text-sm text-primary font-medium font-poppins hover:scale-110 transition-transform duration-300"
                   >
                     {tech}
                   </span>
@@ -112,7 +112,7 @@ const Projects = () => {
 
               <Button
                 variant="outline"
-                className="w-full border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-500 hover:scale-105 transform font-poppins font-semibold text-lg py-6 relative z-10"
+                className="cursor-pointer w-full border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-500 hover:scale-105 transform font-poppins font-semibold text-lg py-6 relative z-10"
               >
                 View Project
               </Button>

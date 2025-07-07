@@ -12,7 +12,7 @@ const About = () => {
       <div ref={ref} className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2
-            className={`text-5xl md:text-7xl font-black mb-8 font-poppins transition-all duration-1200 ${
+            className={`cursor-events-none text-5xl md:text-7xl font-black mb-8 font-poppins transition-all duration-1200 ${
               isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
             }`}
           >
@@ -38,12 +38,12 @@ const About = () => {
             </div>
           </div>
           <div
-            className={`transition-all duration-1200 ${
+            className={`pointer-events-none transition-all duration-1200 ${
               isVisible ? "animate-slide-in-right" : "opacity-0 translate-x-10"
             }`}
             style={{ animationDelay: "0.4s" }}
           >
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8 font-light font-poppins">
+            <p className=" text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8 font-light font-poppins">
               I'm a passionate full-stack developer specializing in modern web
               apps, pixel-perfect UIs, and AI-powered experiences. Focused on
               turning complex ideas into elegant solutions.

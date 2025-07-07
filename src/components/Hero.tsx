@@ -36,9 +36,9 @@ const Hero = () => {
             isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
           }`}
         >
-          <h1 className="cursor-events-none text-5xl md:text-8xl font-black mb-8 leading-tight font-poppins">
+          <h1 className="pointer-events-none text-5xl md:text-8xl font-black mb-8 leading-tight font-poppins">
             Transforming Ideas into{" "}
-            <span className="cursor-events-none gradient-text animate-pulse">
+            <span className="pointer-events-none gradient-text animate-pulse">
               Stunning Web
             </span>{" "}
             Experiences
@@ -50,7 +50,7 @@ const Hero = () => {
           }`}
           style={{ animationDelay: "0.3s" }}
         >
-          <p className="cursor-events-none text-xl md:text-3xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light font-poppins leading-relaxed">
+          <p className="pointer-events-none text-xl md:text-3xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light font-poppins leading-relaxed">
             Freelance Full-Stack & Frontend Developer | Next.js, React & AI
           </p>
         </div>

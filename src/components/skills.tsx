@@ -18,7 +18,7 @@ const Skills = () => {
   return (
     <section className="py-24 px-4" id="skills">
       <div ref={ref} className="container mx-auto max-w-7xl">
-        <div className="text-center mb-20">
+        <div className="pointer-events-none text-center mb-20">
           <h2
             className={`text-5xl md:text-7xl font-black mb-8 font-poppins transition-all duration-1200 ${
               isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
