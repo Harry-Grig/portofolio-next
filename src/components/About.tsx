@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useScrollAnimation } from "../hooks/useScrollAnimations";
+import Image from "next/image";
 
 const About = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -33,10 +34,14 @@ const About = () => {
               <div className="w-full h-full rounded-full bg-muted flex items-center justify-center relative overflow-hidden">
                 {/* Subtle background animation within the circle */}
                 <div className="w-48 h-48 rounded-full bg-gradient-to-r from-primary/50 to-accent/50 animate-float"></div>
-                <div
+                <Image
+                  src="/profile.png"
+                  alt="My Picture"
+                  width={400}
+                  height={300}
                   className="absolute inset-0 bg-gradient-to-r from-secondary/30 to-primary/30 rounded-full animate-pulse"
                   style={{ animationDelay: "1s" }}
-                ></div>
+                />
               </div>
             </div>
           </div>

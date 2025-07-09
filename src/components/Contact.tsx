@@ -16,10 +16,11 @@ const Contact = () => {
           }`}
         >
           <h2 className="text-5xl md:text-7xl font-black mb-8 font-poppins">
-            Let's Build Something <span className="gradient-text">Amazing</span>
+            Let's Build Your Future{" "}
+            <span className="gradient-text">Together</span>
           </h2>
           <p className="text-2xl md:text-3xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light font-poppins leading-relaxed">
-            Have a project or idea? Let's make it happen.
+            Let's Turn Your Idea Into Reality.
           </p>
         </div>
 
@@ -50,7 +51,8 @@ const Contact = () => {
         >
           <div className="flex justify-center space-x-8">
             <a
-              href="#"
+              href="https://github.com/Harry-Grig"
+              target="_blank"
               className="p-6 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:scale-125 hover:glow-cyan group relative overflow-hidden"
               aria-label="Github"
             >
@@ -58,7 +60,8 @@ const Contact = () => {
               <Github className="w-8 h-8 group-hover:text-primary transition-colors duration-500 relative z-10" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/harry-grigoropoulos-921ab9373/"
+              target="_blank"
               className="p-6 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:scale-125 hover:glow-cyan group relative overflow-hidden"
               aria-label="Linkedin"
             >
@@ -66,7 +69,8 @@ const Contact = () => {
               <Linkedin className="w-8 h-8 group-hover:text-primary transition-colors duration-500 relative z-10" />
             </a>
             <a
-              href="#"
+              href="https://web.telegram.org/a/#6906129868"
+              target="_blank"
               className="p-6 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:scale-125 hover:glow-cyan group relative overflow-hidden"
               aria-label="Telegram"
             >
@@ -74,7 +78,8 @@ const Contact = () => {
               <Send className="w-8 h-8 group-hover:text-primary transition-colors duration-500 relative z-10" />
             </a>
             <a
-              href="#"
+              href="https://x.com/G_Xarhs"
+              target="_blank"
               className="p-6 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:scale-125 hover:glow-cyan group relative overflow-hidden"
               aria-label="X"
             >

@@ -42,15 +42,10 @@ const ContactForm = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      info: "hello@harrydev.com",
-      link: "mailto:hello@harrydev.com",
+      info: "xarispap2017@gmail.com",
+      link: "null",
     },
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: "Phone",
-      info: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
-    },
+
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
@@ -93,7 +88,7 @@ const ContactForm = () => {
           <Link href="/">
             <Button
               variant="ghost"
-              className="text-muted-foreground hover:text-primary transition-all duration-500 hover:scale-105 font-poppins"
+              className="cursor-pointer text-muted-foreground hover:text-primary transition-all duration-500 hover:scale-105 font-poppins"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
               Back to Portfolio
@@ -102,7 +97,7 @@ const ContactForm = () => {
         </div>
 
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="cursor-default text-center mb-16">
           <h1
             className={`text-5xl md:text-7xl font-black mb-8 font-poppins transition-all duration-1200 ${
               isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
@@ -111,7 +106,7 @@ const ContactForm = () => {
             Let's Start a <span className="gradient-text">Conversation</span>
           </h1>
           <p
-            className={`text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light font-poppins leading-relaxed transition-all duration-1200 ${
+            className={`cursor-default text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light font-poppins leading-relaxed transition-all duration-1200 ${
               isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
             }`}
             style={{ animationDelay: "0.2s" }}
@@ -129,7 +124,7 @@ const ContactForm = () => {
             }`}
             style={{ animationDelay: "0.3s" }}
           >
-            <Card className="bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-700 hover:glow-cyan">
+            <Card className="cursor-default bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-700 hover:glow-cyan">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold gradient-text font-poppins">
                   Get in Touch

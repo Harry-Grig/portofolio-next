@@ -118,10 +118,10 @@ const ContactFormContent = () => {
   return (
     <Card className="bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-700 hover:glow-cyan">
       <CardHeader>
-        <CardTitle className="text-2xl font-bold gradient-text font-poppins">
+        <CardTitle className="cursor-default text-2xl font-bold gradient-text font-poppins">
           Project Details
         </CardTitle>
-        <CardDescription className="text-lg text-muted-foreground font-poppins">
+        <CardDescription className="cursor-default text-lg text-muted-foreground font-poppins">
           Tell me about your project and requirements
         </CardDescription>
       </CardHeader>
@@ -208,9 +208,7 @@ const ContactFormContent = () => {
                         <SelectItem value="landing-page">
                           Landing Page
                         </SelectItem>
-                        <SelectItem value="e-commerce">E-commerce</SelectItem>
                         <SelectItem value="saas">SaaS Platform</SelectItem>
-                        <SelectItem value="mobile-app">Mobile App</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
@@ -233,6 +231,7 @@ const ContactFormContent = () => {
                         <SelectValue placeholder="Select budget range" />
                       </SelectTrigger>
                       <SelectContent>
+                        <SelectItem value="250$-1k">$250 - $1,000</SelectItem>
                         <SelectItem value="1k-5k">$1,000 - $5,000</SelectItem>
                         <SelectItem value="5k-10k">$5,000 - $10,000</SelectItem>
                         <SelectItem value="10k-25k">
