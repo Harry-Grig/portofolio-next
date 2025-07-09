@@ -19,14 +19,16 @@ const Projects = () => {
         "zod",
         "prisma",
       ],
-      href: "/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202025-07-02%20143545.png",
+      src: "/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202025-07-02%20143545.png",
+      href: "https://github.com/Harry-Grig/project-saas-pro",
     },
     {
-      title: "Creative Portfolio Website",
+      title: "Futuristic Modern Landing Page",
       description:
-        "Stunning portfolio with smooth animations and interactive elements",
-      tech: ["Next.js", "Framer Motion", "Tailwind"],
-      href: "/Screenshot%202025-07-07%20143857.png",
+        "Stunning Landing Page with smooth animations and interactive elements",
+      tech: ["React.js", "Framer Motion", "Tailwind"],
+      src: "/Screenshot%202025-07-09%20145007.png",
+      href: "https://quantum-landing-page.netlify.app/",
     },
     {
       title: "Full Stack productivity task manager",
@@ -41,7 +43,8 @@ const Projects = () => {
         "shadcn ui",
         "server actions",
       ],
-      href: "/Screenshot%202025-07-07%20134336.png",
+      src: "/Screenshot%202025-07-07%20134336.png",
+      href: "https://github.com/Harry-Grig/task-manager",
     },
   ];
 
@@ -83,7 +86,7 @@ const Projects = () => {
                 className={`h-56 rounded-xl  mb-8 opacity-80 group-hover:opacity-100 transition-all duration-500 relative overflow-hidden`}
               >
                 <Image
-                  src={`${project.href}`}
+                  src={`${project.src}`}
                   alt="Project Image"
                   width={400}
                   height={300}
@@ -114,7 +117,13 @@ const Projects = () => {
                 variant="outline"
                 className="cursor-pointer w-full border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-500 hover:scale-105 transform font-poppins font-semibold text-lg py-6 relative z-10"
               >
-                View Project
+                <a
+                  href={`${project.href}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project
+                </a>
               </Button>
             </div>
           ))}
