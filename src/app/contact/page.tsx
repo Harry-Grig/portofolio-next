@@ -138,11 +138,8 @@ const ContactForm = () => {
                   <div
                     key={item.title}
                     className={`flex items-start space-x-4 p-4 rounded-xl bg-muted/50 hover:bg-muted/80 transition-all duration-500 hover:scale-105 ${
-                      item.link ? "cursor-pointer" : ""
+                      item.link ? "cursor-default" : ""
                     }`}
-                    onClick={() =>
-                      item.link && window.open(item.link, "_blank")
-                    }
                   >
                     <div className="text-primary mt-1">{item.icon}</div>
                     <div>
