@@ -1,17 +1,8 @@
 "use client";
 import { useScrollAnimation } from "@/hooks/useScrollAnimations";
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Label } from "@/components/ui/label";
+
 import {
   Card,
   CardContent,
@@ -20,19 +11,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import {
-  Send,
-  Mail,
-  Phone,
-  MapPin,
-  Clock,
-  ArrowLeft,
-  CheckCircle,
-} from "lucide-react";
+import { Mail, MapPin, Clock, ArrowLeft, CheckCircle } from "lucide-react";
 import Link from "next/link";
-import { useForm, Controller } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
+
 import ContactFormContent from "@/components/ContactForm";
 
 const ContactForm = () => {
